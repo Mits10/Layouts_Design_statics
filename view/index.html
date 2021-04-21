@@ -7,7 +7,9 @@
 
     <title>Home Page</title>
   </head>
-  <body>
+  <body id="body">
+    <header>
+    <nav class="sticky">
      <div class="navbar">
        <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/logo.jpg" alt="">
        <ul>
@@ -23,11 +25,13 @@
        </ul>
 
     </div>
+    </nav>
+    </header>
     <div class="clearfix">
       <div class="imageSliding">
         <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/school.jpg" alt="">
       </div>
-      <div class="noticeBar">
+      <div class="noticeBar" >
         <h1>Notices</h1>
         <ul>
         <li><a href="#">Ramadan Schedule: Undergraduate (online) Classes</a></li>
@@ -71,9 +75,10 @@
           </div>
 
     </div>
+   <footer>
     <div class="footer">
         <div class="column">
-          <h1>About</h1>
+          <h1 id="bar">About</h1>
           <ul>
             <li><a href="#">Mission</a></li>
             <li><a href="#">Leadership and Management</a></li>
@@ -124,5 +129,13 @@
           </ul>
         </div>
     </div>
+
+    </footer>
+    <div class="stickyFooterNavbar">
+      <button type="button" onclick="moodChange()" class="onMode" name="button">Dark Mode</button>
+      <button type="button" onclick="moodChange()" class="offMode" name="button">Light Mode</button>
+
+    </div>
+    <script type="text/javascript" src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/javascripts/index.js"></script>
   </body>
 </html>
